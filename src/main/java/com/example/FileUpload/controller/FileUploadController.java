@@ -16,7 +16,7 @@ import org.springframework.web.multipart.MultipartFile;
 public class FileUploadController {
 
 	@Value("${file.upload-dir}")
-	String FILE_DIRECTORY;
+	String FILE_DIRECTORY ;
 	
 	@PostMapping("/uploadFile")
 	public ResponseEntity<Object> fileUpload(@RequestParam("File") MultipartFile file) throws IOException{
